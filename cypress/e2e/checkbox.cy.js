@@ -7,8 +7,6 @@ describe('Checkbox Selection Test', () => {
 
 	it('should select both checkboxes if they are not already checked', () => {
 		CheckboxesPage.checkAllCheckboxes();
-
-		// Assert both checkboxes are checked
 		CheckboxesPage.assertAllCheckboxesChecked();
 	});
 });

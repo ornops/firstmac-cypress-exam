@@ -9,8 +9,6 @@ describe('Login Functionality Tests', () => {
 		LoginPage.enterUsername('tomsmith');
 		LoginPage.enterPassword('SuperSecretPassword!');
 		LoginPage.clickLogin();
-
-		// Assert success message
 		LoginPage.getSuccessMessage();
 	});
 
@@ -18,8 +16,6 @@ describe('Login Functionality Tests', () => {
 		LoginPage.enterUsername('tomsmith');
 		LoginPage.enterPassword('WrongPassword!');
 		LoginPage.clickLogin();
-
-		// Assert error message
 		LoginPage.getErrorMessage();
 	});
 });
